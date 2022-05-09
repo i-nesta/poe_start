@@ -1,0 +1,285 @@
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+
+.container_main {
+   max-width: 100%;
+   height: 100vh;
+   margin: 0 auto;
+   background-image: url(source/GAsxHR.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* display: flex; */
+
+}
+
+header {
+   height: 10%;
+   text-align: center;
+}
+
+.logoimg {
+   width: 257px;
+   height: 200px;
+
+
+}
+
+.thing_main {
+   width: 1440px;
+   display: flex;
+   flex-direction: row;
+   margin: 0 auto;
+
+}
+
+.thing_start {
+   width: 50%;
+   height: 800px;
+   background-image: url(source/MainInventory.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin-right: 50px;
+   margin-top: 80px;
+   position: relative;
+}
+
+.thing_end {
+   width: 50%;
+   height: 800px;
+   background-image: url(source/MainInventory.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin-top: 80px;
+}
+
+.weapon_s_1 {
+
+   width: 110px;
+   height: 215px;
+   position: absolute;
+   left: 74px;
+   top: 127px;
+
+}
+
+.weapon_s_2 {
+
+   width: 110px;
+   height: 215px;
+   background-color: rgba(0, 255, 255, 0.26);
+   position: absolute;
+   left: 508px;
+   top: 127px;
+}
+
+.helmet_s_1 {
+   width: 110px;
+   height: 110px;
+   background-color: rgba(0, 255, 255, 0.392);
+   position: absolute;
+   left: 290px;
+   top: 110px;
+}
+
+.chest_s {
+   width: 110px;
+   height: 162px;
+   background-color: rgba(0, 255, 255, 0.392);
+   position: absolute;
+   top: 235px;
+   left: 290px;
+
+}
+
+.belt_s {
+   width: 110px;
+   height: 52px;
+   background-color: rgba(0, 255, 255, 0.392);
+   position: absolute;
+   top: 415px;
+   left: 290px;
+}
+
+.ring1_s {
+   width: 50px;
+   height: 50px;
+   background-color: rgba(0, 255, 255, 0.392);
+   position: absolute;
+   top: 295px;
+   left: 212px;
+}
+
+.ring2_s {
+   width: 50px;
+   height: 50px;
+   background-color: rgba(0, 255, 255, 0.392);
+   position: absolute;
+   top: 295px;
+   left: 428px;
+}
+
+.amulet_s {
+   width: 50px;
+   height: 50px;
+   background-color: rgba(0, 255, 255, 0.392);
+   position: absolute;
+   top: 227px;
+   left: 428px;
+}
+
+.gloves_s {
+   width: 110px;
+   height: 110px;
+   background-color: rgba(0, 255, 255, 0.392);
+   position: absolute;
+   top: 359px;
+   left: 155px;
+}
+
+.boots_s {
+   width: 110px;
+   height: 110px;
+   background-color: rgba(0, 255, 255, 0.392);
+   position: absolute;
+   top: 359px;
+   left: 427px;
+}
+
+.flask_start {
+   width: 270px;
+   height: 108px;
+   background-color: rgba(0, 255, 255, 0.392);
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   top: 483px;
+   left: 215px;
+
+}
+
+.flask {
+   width: 54px;
+   height: 108;
+   margin-right: 2px;
+   border: 2px solid red;
+}
+
+.nameblock {
+   width: 217px;
+   height: 26px;
+   position: absolute;
+   left: 235px;
+   top: 59px;
+   text-align: center;
+   font-size: 26px;
+   font: bold;
+   color: rgb(43, 41, 49);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.weapon_s_1_hover {
+   width: 200px;
+   height: 215px;
+   background-color: rgba(255, 174, 0, 0.381);
+   position: absolute;
+   left: 100px;
+   top: 80px;
+   display: none;
+}
+
+a:hover div.weapon_s_1_hover {
+   display: block;
+}
+
+img.w1 {
+   display: block;
+   margin: auto;
+}
